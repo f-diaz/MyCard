@@ -8,10 +8,16 @@
         <entry key="../../../../layout/compose-model-1653567256934.xml" value="1.0" />
         <entry key="../../../../layout/compose-model-1653567733223.xml" value="0.25" />
         <entry key="../../../../layout/compose-model-1653583257525.xml" value="0.33" />
+        <entry key="../../../../layout/compose-model-1653593705603.xml" value="0.5" />
+        <entry key="../../../../layout/compose-model-1653595155117.xml" value="0.22" />
+        <entry key="../../../../layout/compose-model-1653606424596.xml" value="0.5" />
+        <entry key="../../../../layout/compose-model-1653609560815.xml" value="0.19679054054054054" />
+        <entry key="../../../../layout/compose-model-1653609745740.xml" value="0.5" />
+        <entry key="../../../../layout/compose-model-1653610431177.xml" value="0.28547297297297297" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
