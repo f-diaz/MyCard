@@ -32,7 +32,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyCardTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
+                Surface(modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colors.background) {
                     CreateCard ()
                 }
             }
@@ -111,22 +112,25 @@ fun Portfolio(data: List<String>) {
     LazyColumn {
         // Add a single item
         item {
-            CreateItemPortfolio()
+            CreateItemPortfolio("Developer Info App",
+                "Shows info and portfolio's developer", R.drawable.developer)
         }
 
         item {
-            CreateItemPortfolio()
+            CreateItemPortfolio("Tax Calculator",
+                "Application to calculate taxes", R.drawable.invoice)
         }
 
         item {
-            CreateItemPortfolio()
+            CreateItemPortfolio("Star Wars Wiki",
+                "Application to discover the Star Wars universe", R.drawable.starwars)
         }
 
     }
 }
 
 @Composable
-private fun CreateItemPortfolio() {
+private fun CreateItemPortfolio(work: String, description: String, image: Int) {
     Card(modifier = Modifier
         .padding(13.dp)
         .fillMaxWidth(),
@@ -145,7 +149,7 @@ private fun CreateItemPortfolio() {
                 elevation = 4.dp,
                 color = MaterialTheme.colors.onSurface.copy(alpha = 0.5f)) {
 
-                Image(painter = painterResource(id = R.drawable.avatar),
+                Image(painter = painterResource(id = image),
                     contentDescription = "profile image",
                     modifier = Modifier.size(95.dp),
                     contentScale = ContentScale.Crop)
@@ -155,9 +159,9 @@ private fun CreateItemPortfolio() {
                 .padding(7.dp)
                 .align(alignment = Alignment.CenterVertically)) {
 
-                Text(text = "Developer Info App",
+                Text(text = work,
                     fontWeight = FontWeight.Bold)
-                Text(text = "Shows info and portfolio's developer",
+                Text(text = description,
                     style = MaterialTheme.typography.body2)
             }
 
