@@ -1,6 +1,6 @@
 # My Card
 
-Aplicaciíon programada con Jetpack Compose.
+Aplicación programada con Jetpack Compose.
 
 Muestra la información y portfolio de un programador.
 
